@@ -7,7 +7,11 @@ img{
     max-width: 100%;
     
 }
-img, 
+video{
+    display: block;
+    max-width: 100%;
+}
+img, video,
 .side-bar .list-group-item,
 .side-bar-card{
     border-radius: 3px;
