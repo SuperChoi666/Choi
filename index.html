@@ -57,7 +57,7 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="main-navigation">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="dropdown">
+                        <!-- <li class="dropdown">
                             <a href="index.html" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">Home <span
                                     class="pe-7s-angle-down"></span></a>
                             <ul class="dropdown-menu" role="menu">
@@ -67,7 +67,7 @@
                                 <li><a href="4.html">Home 4</a></li>
                                 <li><a href="5.html">Home 5</a></li>
                             </ul>
-                        </li>
+                        </li> -->
                         <!-- <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">Portfolio
                                 <span class="pe-7s-angle-down"></span></a>
@@ -95,11 +95,11 @@
                             <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">现有项目<span
                                     class="pe-7s-angle-down"></span></a>
                             <ul class="dropdown-menu" role="menu">
-                                <li><a href="New/main/index.html">项目一</a></li>
-                                <li><a href="video/public.html">视频创作</a></li>
-                                <li><a href="#">项目二前台（缺货）</a></li>
-                                <li><a href="#">项目二后台（缺货）</a></li>
-                                <li><a href="../更新日志.txt" target="_blank">网站版本日志</a></li>
+                                <li><a href="New/main/index.html" target="_blank">作品一</a></li>
+                                <!-- <li><a href="video/public.html">视频创作</a></li> -->
+                                <!-- <li><a href="#">项目二（缺货）</a></li> -->
+                                <!-- <li><a href="#">项目二后台（缺货）</a></li> -->
+                                <li><a href="./Updatalog.html" target="_blank">网站版本日志</a></li>
                             </ul>
                         </li>
                         <li><a href="#search"><i class="pe-7s-search"></i></a></li>
@@ -149,12 +149,16 @@
                         <div class="col-md-6 wow fadeInLeft" data-wow-delay="0.5s">
                             <p class="lead">本人于已毕业,就职前端. </p>
                             <p>能使用Vue、Bootstrap框架,可编写原生js与css.</p>
-                                <p class="mt30 col-xs-3"><a href="./About/myCV.html" class="btn btn-primary btn-theme page-scroll"
-                                        onclick="">浏览简历</a></p>
-                                <p class="mt30 col-xs-3"><a href="#contact" class="btn btn-primary btn-theme page-scroll"
-                                        onclick="return confirm('联系邮箱：550823026@qq.com')">与我联系</a></p>
+                            <p class="mt30 col-xs-2.5"><a href="./About/myCV.html"
+                                    class="btn btn-primary btn-theme page-scroll" onclick="">浏览简历</a></p>
+                            <!-- <p class="mt30 col-xs-0"><a href="#contact" class="btn btn-primary btn-theme page-scroll"
+                                        onclick="return confirm('联系邮箱：*******@qq.com')">与我联系</a></p> -->
+                            <p class="mt30 col-xs-0"><a target="_blank"
+                                    href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=5NHR1NzW19TW0qSVlcqHi4k"
+                                    class="btn btn-primary btn-theme page-scroll">与我联系</a></p>
+                            
                             <!-- 邮箱屏蔽 -->
-                            <!-- return confirm('联系邮箱：550823026@qq.com') -->
+                            <!-- return confirm('联系邮箱：******@qq.com') -->
                         </div>
 
                         <div class="col-md-6">
@@ -170,10 +174,10 @@
         <div class="col-sm-6 nopadding-lr dark-wrapper opaqued background-cover"
             style="background-image: url('assets/img/bg/bg1.jpg');">
             <div class="dark-opaqued section-inner pad-sides-60 match-height" data-mh="promo-inner">
-                <h3>作品一（JSP）初级版【已下线】</h3>
+                <h3>作品一（JSP）在校篇【部署中】</h3>
                 <p class="lead">页面收集香奈儿、古驰等高端品牌产品信息，汇编进JSP网页中，涉及到 JSP
                     的响应式页面，兼容不同尺寸的浏览设备，项目配备MySQL数据库连接、数据交换、登录注册、邮件发送、用户界面、购物界面等一系列界面和功能实现，加入JS脚本实现各功能的有序进行.</p>
-                <p class="mt30"><a href="#contact" class="btn btn-primary btn-white page-scroll">Find Out More</a></p>
+                <p class="mt30"><a href="#contact" class="btn btn-primary btn-white page-scroll disabled">暂不开放</a></p>
             </div>
         </div>
         <div class="col-sm-6 nopadding-lr dark-wrapper opaqued background-cover"
@@ -182,7 +186,7 @@
                 <h3>作品二（PHP）【已下线】</h3>
                 <h3>电商系统(前后台分离)</h3>
                 <p class="lead">页面使用PHP搭建，布局采用标准的三部分，其中不同于JSP项目的是，本版本更加贴近日常网购的体验，配备独立后台管理系统.</p>
-                <p class="mt30"><a href="#contact" class="btn btn-primary btn-white page-scroll">点击浏览</a></p>
+                <p class="mt30"><a href="#contact" class="btn btn-primary btn-white page-scroll disabled">敬请期待</a></p>
             </div>
         </div>
         <div class="col-sm-6 nopadding-lr dark-wrapper opaqued background-cover"
@@ -191,16 +195,17 @@
                 <h3>作品三（BootStrap）</h3>
                 <h3>新闻头条</h3>
                 <p class="lead">页面收集当今时事热点，自成一个标准前端模块.</p>
-                <p class="mt30"><a href="#contact" class="btn btn-primary btn-white page-scroll">Find Out More</a></p>
+                <p class="mt30"><a href="./New/main/index.html" class="btn btn-primary btn-white page-scroll">点击浏览</a>
+                </p>
             </div>
         </div>
         <div class="col-sm-6 nopadding-lr dark-wrapper opaqued background-cover"
             style="background-image: url('assets/img/bg/bg3.jpg');">
             <div class="dark-opaqued section-inner pad-sides-60 match-height text-right" data-mh="promo-inner">
-                <h3>作品四（部署中）【待上线】</h3>
-                <h3>****系统(前后台分离)</h3>
-                <p class="lead">****</p>
-                <p class="mt30"><a href="" class="btn btn-primary btn-white page-scroll">****</a></p>
+                <h3>作品四 React（部署中）</h3>
+                <h3>cms后台管理系统</h3>
+                <p class="lead">后台管理系统，用户注册登录，用户名密码头像修改，内容提交、查看、修改、删除</p>
+                <p class="mt30"><a href="" class="btn btn-primary btn-white page-scroll disabled">敬请期待</a></p>
             </div>
         </div>
         <section class="dark-wrapper">
@@ -347,59 +352,59 @@
                     <div class="col-md-12 text-center wow fadeIn" data-wow-delay="0.5s">
                         <span class="copyright">@2019-2022.<a href="index.html" target="_black"
                                 title="Choi">Choi</a></span><br>
-                                <span class="copyright">
-                                    <script language=JavaScript>
-                                        //<!--访问
-                                        var caution = false
-                                        function setCookie(name, value, expires, path, domain, secure) {
-                                        var curCookie = name + "=" + escape(value) +
+                        <span class="copyright">
+                            <script language=JavaScript>
+                                //<!--访问
+                                var caution = false
+                                function setCookie(name, value, expires, path, domain, secure) {
+                                    var curCookie = name + "=" + escape(value) +
                                         ((expires) ? "; expires=" + expires.toGMTString() : "") +
                                         ((path) ? "; path=" + path : "") +
                                         ((domain) ? "; domain=" + domain : "") +
                                         ((secure) ? "; secure" : "")
-                                        if (!caution || (name + "=" + escape(value)).length <= 4000)
+                                    if (!caution || (name + "=" + escape(value)).length <= 4000)
                                         document.cookie = curCookie
-                                        else
+                                    else
                                         if (confirm("Cookie exceeds 4KB and will be cut!"))
-                                        document.cookie = curCookie
-                                        }
-                                        function getCookie(name) {
-                                        var prefix = name + "="
-                                        var cookieStartIndex = document.cookie.indexOf(prefix)
-                                        if (cookieStartIndex == -1)
+                                            document.cookie = curCookie
+                                }
+                                function getCookie(name) {
+                                    var prefix = name + "="
+                                    var cookieStartIndex = document.cookie.indexOf(prefix)
+                                    if (cookieStartIndex == -1)
                                         return null
-                                        var cookieEndIndex = document.cookie.indexOf(";", cookieStartIndex + prefix.length)
-                                        if (cookieEndIndex == -1)
+                                    var cookieEndIndex = document.cookie.indexOf(";", cookieStartIndex + prefix.length)
+                                    if (cookieEndIndex == -1)
                                         cookieEndIndex = document.cookie.length
-                                        return unescape(document.cookie.substring(cookieStartIndex + prefix.length, cookieEndIndex))
-                                        }
-                                        function deleteCookie(name, path, domain) {
-                                        if (getCookie(name)) {
+                                    return unescape(document.cookie.substring(cookieStartIndex + prefix.length, cookieEndIndex))
+                                }
+                                function deleteCookie(name, path, domain) {
+                                    if (getCookie(name)) {
                                         document.cookie = name + "=" +
-                                        ((path) ? "; path=" + path : "") +
-                                        ((domain) ? "; domain=" + domain : "") +
-                                        "; expires=Thu, 01-Jan-70 00:00:01 GMT"
-                                        }
-                                        }
-                                        function fixDate(date) {
-                                        var base = new Date(0)
-                                        var skew = base.getTime()
-                                        if (skew > 0)
+                                            ((path) ? "; path=" + path : "") +
+                                            ((domain) ? "; domain=" + domain : "") +
+                                            "; expires=Thu, 01-Jan-70 00:00:01 GMT"
+                                    }
+                                }
+                                function fixDate(date) {
+                                    var base = new Date(0)
+                                    var skew = base.getTime()
+                                    if (skew > 0)
                                         date.setTime(date.getTime() - skew)
-                                        }
-                                        var now = new Date()
-                                        fixDate(now)
-                                        now.setTime(now.getTime() + 365 * 24 * 60 * 60 * 1000)
-                                        var visits = getCookie("counter")
-                                        if (!visits)
-                                        visits = 1
-                                        else
-                                        visits = parseInt(visits) + 1
-                                        setCookie("counter", visits, now)
-                                        document.write("您是第" + visits + "位访问本专题的！")
+                                }
+                                var now = new Date()
+                                fixDate(now)
+                                now.setTime(now.getTime() + 365 * 24 * 60 * 60 * 1000)
+                                var visits = getCookie("counter")
+                                if (!visits)
+                                    visits = 1
+                                else
+                                    visits = parseInt(visits) + 1
+                                setCookie("counter", visits, now)
+                                document.write("您是第" + visits + "位访问本专题的！")
                                         // -->
-                                        </script>
-                                </span>
+                            </script>
+                        </span>
                     </div>
                     <br>
                 </div>

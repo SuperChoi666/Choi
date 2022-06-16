@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <title>Choi个人网站日志</title>
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h1>欢迎浏览 Choi 个人网站日中</h1>
+        <ul class="list-group">
+            <li class="list-group-item">更新日志</li>
+            <li class="list-group-item">1.建站搭建项目，部署作品 --> 2022年6月17日前</li>
+            <li class="list-group-item">2.2022年6月17日后 --> 上线项目，同步Github</li>
+            <li class="list-group-item">……</li>
+            <!-- <li class="list-group-item">……</li> -->
+          </ul>
+        <p>敬请期待...</p>
+        <div class="row">
+            <div class="col-xs-3 col-md-3" style="text-align: center">
+              <!-- <a href="#" class="thumbnail"> -->
+                <!-- <img src="./logpic/小可爱.gif" alt="..."> -->
+                <img style="width: 40vh; height: 40vh;" src="./logpic/worker.gif" alt="...">
+             </a>
+            </div>
+            ...
+          </div>
+        <!-- <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p> -->
+    </div>
+    <div style="text-align: center"> <script language=JavaScript>
+        //<!--访问
+        var caution = false
+        function setCookie(name, value, expires, path, domain, secure) {
+        var curCookie = name + "=" + escape(value) +
+        ((expires) ? "; expires=" + expires.toGMTString() : "") +
+        ((path) ? "; path=" + path : "") +
+        ((domain) ? "; domain=" + domain : "") +
+        ((secure) ? "; secure" : "")
+        if (!caution || (name + "=" + escape(value)).length <= 4000)
+        document.cookie = curCookie
+        else
+        if (confirm("Cookie exceeds 4KB and will be cut!"))
+        document.cookie = curCookie
+        }
+        function getCookie(name) {
+        var prefix = name + "="
+        var cookieStartIndex = document.cookie.indexOf(prefix)
+        if (cookieStartIndex == -1)
+        return null
+        var cookieEndIndex = document.cookie.indexOf(";", cookieStartIndex + prefix.length)
+        if (cookieEndIndex == -1)
+        cookieEndIndex = document.cookie.length
+        return unescape(document.cookie.substring(cookieStartIndex + prefix.length, cookieEndIndex))
+        }
+        function deleteCookie(name, path, domain) {
+        if (getCookie(name)) {
+        document.cookie = name + "=" +
+        ((path) ? "; path=" + path : "") +
+        ((domain) ? "; domain=" + domain : "") +
+        "; expires=Thu, 01-Jan-70 00:00:01 GMT"
+        }
+        }
+        function fixDate(date) {
+        var base = new Date(0)
+        var skew = base.getTime()
+        if (skew > 0)
+        date.setTime(date.getTime() - skew)
+        }
+        var now = new Date()
+        fixDate(now)
+        now.setTime(now.getTime() + 365 * 24 * 60 * 60 * 1000)
+        var visits = getCookie("counter")
+        if (!visits)
+        visits = 1
+        else
+        visits = parseInt(visits) + 1
+        setCookie("counter", visits, now)
+        document.write("您是第" + visits + "位访问本专题的！")
+        // -->
+        </script></div>
+</body>
+
+</html>
