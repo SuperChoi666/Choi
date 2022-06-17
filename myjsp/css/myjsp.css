@@ -1,0 +1,29 @@
+*{
+text-decoration: none;
+list-style-type: none;
+}
+body{
+    /* background: url(/pic/exambg2.jpg); */
+    /* background-size: cover; */
+    background-attachment:fixed;
+}
+h5{
+    font-size: 20px;
+    border-style: outset ;
+    border: medium dotted  black;
+    background: pink;
+}
+.tb2{
+    color: green;
+}
+.top1{
+    font-family: "华文隶书";
+    font-size: 50px;
+}
+.msg_neirong{
+    margin-top: 10px;
+    font-family: 华文宋体;
+    font-size:20px;
+    font-weight: bold;
+}
+
